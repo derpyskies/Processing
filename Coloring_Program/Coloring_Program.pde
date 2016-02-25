@@ -53,7 +53,7 @@ void mouseDragged()
 {
   if(mouseButton == LEFT)
   {
-    strokeWeight(20);
+    strokeWeight(penSize);
     stroke(r,g,b);
     line(pmouseX,pmouseY,mouseX,mouseY);
   }
@@ -71,16 +71,12 @@ void mouseWheel(MouseEvent event)
 {
  penSize = penSize + event.getCount();
  println(penSize);
-}
-
-void mouseWheel()
-{
-  if(penSize == 1);
-  {
-    strokeWeight(10);
-  }
-  if(penSize == 2);
-  {
-    strokeWeight(50);
-  }
+ if(penSize > 50)
+ {
+   penSize = 1;
+ }
+ if(penSize < 1)
+ {
+   penSize = 50;
+ }
 }
