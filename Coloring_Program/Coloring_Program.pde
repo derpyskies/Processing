@@ -8,7 +8,7 @@ int b = 10;
 void setup()
 {
   size(800,800);
-  background(255);
+  background(255); //set UP
 }
 
 void draw()
@@ -45,7 +45,7 @@ void draw()
     if (b > 255)
     {
       b = 0;
-    }
+    }  //Sets RGB to respective values for color change
   }
 }
 
@@ -57,15 +57,14 @@ void mouseDragged()
     stroke(r,g,b);
     line(pmouseX,pmouseY,mouseX,mouseY);
   }
-}
-
-void mousePressed()
-{
   if(mouseButton == RIGHT)
   {
-    background(255);
+    strokeWeight(penSize);
+    stroke(255,255,255);
+    line(pmouseX,pmouseY,mouseX,mouseY);
   }
 }
+
 
 void mouseWheel(MouseEvent event)
 {
