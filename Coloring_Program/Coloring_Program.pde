@@ -27,7 +27,7 @@ void draw()
   fill(r,g,b);
   ellipse(1150, 55, penSize, penSize);
   
-  
+  //Creates UI boxes
   strokeWeight(1);
   stroke(0);
   //Ivory coded
@@ -126,195 +126,231 @@ void draw()
   //Black
   fill(0,0,0);
   rect(30,470,30,30);
+  
+  //Lets you click on the UI boxes to get
+  //the color you want
 
   if(mousePressed == true) 
   {
+    //If X & Y land in these values make the respective color
+    //Ivory
     if(mouseX < 30 && mouseX > 0 && mouseY < 50 && mouseY > 20) 
     {
       r = 255;
       g = 255;
       b = 240;
     }
+    //Beige
     if(mouseX < 60 && mouseX > 30 && mouseY < 50 && mouseY > 20) 
     {
       r = 245;
       g = 245;
       b = 220;
     }
+    //Wheat
     if(mouseX < 30 && mouseX > 0 && mouseY < 80 && mouseY > 50)
     {
       r = 245;
       g = 222;
       b = 179;
     }
+    //Tan
     if(mouseX < 60 && mouseX > 30 && mouseY < 80 && mouseY > 50)
     {
       r = 210;
       g = 180;
       b = 140;
     }
+    //Khaki
     if(mouseX < 30 && mouseX > 0 && mouseY < 110 && mouseY > 80)
     {
       r = 195;
       g = 176;
       b = 145;
     }
+    //Silver
     if(mouseX < 60 && mouseX > 30 && mouseY < 110 && mouseY > 80)
     {
       r = 192;
       g = 192;
       b = 192;
     }
+    //Grey
     if(mouseX < 30 && mouseX > 0 && mouseY < 140 && mouseY > 110)
     {
       r = 128;
       g = 128;
       b = 128;
     }
+    //Charcoal
     if(mouseX < 60 && mouseX > 30 && mouseY < 140 && mouseY > 110)
     {
       r = 70;
       g = 70;
       b = 70;
     }
+    //Navy Blue
     if(mouseX < 30 && mouseX > 0 && mouseY < 170 && mouseY > 140)
     {
       r = 0;
       g = 0;
       b = 205;
     }
+    //Azure
     if(mouseX < 60 && mouseX > 30 && mouseY < 170 && mouseY > 140)
     {
       r = 70;
       g = 125;
       b = 255;
     }
+    //Cyan
     if(mouseX < 30 && mouseX > 0 && mouseY < 200 && mouseY > 170)
     {
       r = 0;
       g = 255;
       b = 255;
     }
+    //Aquamarine
     if(mouseX < 60 && mouseX > 30 && mouseY < 200 && mouseY > 170)
     {
       r = 127;
       g = 255;
       b = 212;
     }
+    //Teal
     if(mouseX < 30 && mouseX > 0 && mouseY < 230 && mouseY > 200)
     {
       r = 0;
       g = 128;
       b = 128;
     }
+    //Forest Green
     if(mouseX < 60 && mouseX > 30 && mouseY < 230 && mouseY > 200)
     {
       r = 34;
       g = 139;
       b = 34;
     }
+    //Olive
     if(mouseX < 30 && mouseX > 0 && mouseY < 260 && mouseY > 230)
     {
       r = 128;
       g = 128;
       b = 0;
     }
+    //Chartreuse
     if(mouseX < 60 && mouseX > 30 && mouseY < 260 && mouseY > 230)
     {
       r = 127;
       g = 255;
       b = 0;
     }
+    //Lime
     if(mouseX < 30 && mouseX > 0 && mouseY < 290 && mouseY > 260)
     {
       r = 191;
       g = 255;
       b = 0;
     }
+    //Golden
     if(mouseX < 60 && mouseX > 30 && mouseY < 290 && mouseY > 260)
     {
       r = 255;
       g = 215;
       b = 0;
     }
+    //Goldenrod
     if(mouseX < 30 && mouseX > 0 && mouseY < 320 && mouseY > 290)
     {
       r = 218;
       g = 165;
       b = 32;
     }
+    //Coral
     if(mouseX < 60 && mouseX > 30 && mouseY < 320 && mouseY > 290)
     {
       r = 255;
       g = 127;
       b = 80;
     }
+    //Salmon
     if(mouseX < 30 && mouseX > 0 && mouseY < 350 && mouseY > 320)
     {
       r = 250;
       g = 128;
       b = 144;
     }
+    //Hot Pink
     if(mouseX < 60 && mouseX > 30 && mouseY < 350 && mouseY > 320)
     {
       r = 252;
       g = 15;
       b = 192;
     }
+    //Fuchsia
     if(mouseX < 30 && mouseX > 0 && mouseY < 380 && mouseY > 350)
     {
       r = 255;
       g = 119;
       b = 255;
     }
+    //Puce
     if(mouseX < 60 && mouseX > 30 && mouseY < 380 && mouseY > 350)
     {
       r = 204;
       g = 134;
       b = 153;
     }
+    //Mauve
     if(mouseX < 30 && mouseX > 0 && mouseY < 410 && mouseY > 380)
     {
       r = 224;
       g = 176;
       b = 255;
     }
+    //Lavender
     if(mouseX < 60 && mouseX > 30 && mouseY < 410 && mouseY > 380)
     {
       r = 181;
       g = 126;
       b = 220;
     }
+    //Plum
     if(mouseX < 30 && mouseX > 0 && mouseY < 440 && mouseY > 410)
     {
       r = 132;
       g = 49;
       b = 121;
     }
+    //Indigo
     if(mouseX < 60 && mouseX > 30 && mouseY < 440 && mouseY > 410)
     {
       r = 75;
       g = 0;
       b = 130;
     }
+    //Maroon
     if(mouseX < 30 && mouseX > 0 && mouseY < 470 && mouseY > 440)
     {
       r = 128;
       g = 0;
       b = 0;
     }
+    //Crimson
     if(mouseX < 60 && mouseX > 30 && mouseY < 470 && mouseY > 440)
     {
       r = 220;
       g = 20;
       b = 60;
     }
+    //White
     if(mouseX < 30 && mouseX > 0 && mouseY < 500 && mouseY > 470)
     {
       r = 255;
       g = 255;
       b = 255;
     }
+    //Black
     if(mouseX < 60 && mouseX > 30 && mouseY < 500 && mouseY > 470)
     {
       r = 0;
@@ -324,7 +360,7 @@ void draw()
     
 
   }
-  //Red
+  //RED
   if(key == '1')
   {
     r++;
@@ -343,7 +379,7 @@ void draw()
       r = 255;
     }
   }
-  //Green
+  //GREEN
   else if(key == '3')
   {
     g++;
